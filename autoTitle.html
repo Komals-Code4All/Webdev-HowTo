@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    < link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+    <title>Komal's Code Craft</title>
+  </head>
+  <body>
+    <!-- insert standard header -->
+    <embed type="text/html" src="assets/resources/header.html" width="100%" />
+
+    <!-- This is a clever way to have a header that will always be the same as the <title> -->
+    <h1 id="autoTitle">
+      <script>
+        document.getElementById("autoTitle").innerHTML =
+          document.getElementsByTagName("title")[0].innerHTML;
+      </script>
+    </h1>
+
+    <p>
+      The above H1 heading is generated using the contents of the title tag and
+      the following code
+    </p>
+    <code>
+      document.getElementById("autoTitle").innerHTML =
+      document.getElementsByTagName("title")[0].innerHTML;
+    </code>
+
+    <!-- insert standard footer -->
+    <embed type="text/html" src="assets/resources/footer.html" width="100%" />
+  </body>
+</html>
