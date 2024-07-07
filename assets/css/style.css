@@ -21,6 +21,16 @@ body {
 	color: var(--txtColor);
 }
 
+button {
+	transition-duration: 0.4s;
+}
+
+button:hover {
+	color: var(--bgColor); /* reverse the fore ground and background colors */
+	background-color: var(--txtColor);
+	box-shadow: 0 0 5px 5px var(--bgColorLight); /* add a little shadow */
+}
+
 /* Style <pre> with a slightly larger font size */
 pre {
 	font-size: large;

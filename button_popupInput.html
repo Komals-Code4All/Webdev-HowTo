@@ -20,22 +20,11 @@
 		/>
 
 		<main>
-			<!-- Use the text in <title> tag as the page's H1 heading -->
-			<h1 id="autoTitle">
-				<script>
-					document.getElementById("autoTitle").innerHTML =
-						document.getElementsByTagName("title")[0].innerHTML;
-				</script>
-			</h1>
+			<!-- Define a button, when clicked pop-ups an input-alert window -->
+			<button onclick="inputText()">Click Me</button>
 
-			<p>
-				The above H1 heading is generated using the contents of the
-				&lt;title&gt; tag with the following code
-			</p>
-			<code>
-				document.getElementById("autoTitle").innerHTML =
-				document.getElementsByTagName("title")[0].innerHTML;
-			</code>
+			<!-- Input from the user will be output here -->
+			<h2 class="message" id="message"></h2>
 		</main>
 
 		<!-- insert standard footer -->
@@ -44,5 +33,13 @@
 			src="assets/embedCode/stdFooter.html"
 			width="100%"
 		/>
+
+		<script>
+			function inputText() {
+				var text;
+				text = prompt("Hi, what's your name?");
+				document.getElementById("message").innerHTML = "Hello " + text;
+			}
+		</script>
 	</body>
 </html>
