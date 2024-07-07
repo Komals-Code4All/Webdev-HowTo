@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Komal Karir" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<title>Code4All</title>
 
-    <meta name="author" content="Komal Karir" >
-    <meta name="" content="" >
-    <link rel="stylesheet" type="text/css" href="heroImage.css" >
-    <title>Document</title>
-</head>
+		<!-- additional CSS for styling hero image -->
+		<style>
+			/* style the actual image */
+			#hero_image {
+				height: 500px;
+				width: 100%;
+				background: url("assets/images/kommieRacerSmall.jpg") no-repeat center
+					center/cover;
+				position: relative;
+				background-color: gray; /* default color if image not found */
+			}
 
-<body>
-   
-    <header>
-        <h1> Top level heading</h1>
-    </header>
+			/* style the (optional) overlaying box */
+			#hero_text_box {
+				/* Use rgba since it has final value which sets the opacity, for semi-transparent box */
+				background-color: rgba(241, 109, 107, 0.7);
+				font-size: 130%;
+				position: absolute;
+				bottom: 15%;
+				right: 5%;
+				width: 60%;
+				min-height: 200px;
+				padding-top: 40px;
+				padding-left: 10px;
+			}
 
-<main>
-    <div id="hero_image">
+			/* style the text that will overlay the hero image  */
+			#hero_text_box > h1 {
+				color: yellow;
+			}
 
-    <div id="hero_text" >
-        <h1> Hero image H1 text</h1>
-        <h2> Hero image H2 text</h2>
-        <h3> Hero image H3 text</h3>
-    </div>      
+			#hero_text_box > h2 {
+				color: greenyellow;
+			}
 
-    </div>
+			#hero_text_box > h3 {
+				color: turquoise;
+			}
+		</style>
+	</head>
 
-    
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
 
-</main>
+		<!-- main section -->
+		<main>
+			<div id="hero_image">
+				<div id="hero_text_box">
+					<h1>Hero image H1 text</h1>
+					<h2>Hero image H2 text</h2>
+					<h3>Hero image H3 text</h3>
+				</div>
+			</div>
+		</main>
 
-<footer>
-    <h6>(c) Komal</h6>
-</footer>
-</body>
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
 </html>

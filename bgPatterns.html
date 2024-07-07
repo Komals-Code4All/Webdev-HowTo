@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Komal's Code Craft</title>
+
+		<style>
+			div {
+				height: 250px;
+				width: 100%;
+			}
+
+			#microbial-mat {
+				background: radial-gradient(
+							circle at 0% 50%,
+							rgba(96, 16, 48, 0) 9px,
+							#613 10px,
+							rgba(96, 16, 48, 0) 11px
+						)
+						0px 10px,
+					radial-gradient(
+						at 100% 100%,
+						rgba(96, 16, 48, 0) 9px,
+						#613 10px,
+						rgba(96, 16, 48, 0) 11px
+					),
+					#8a3;
+				background-size: 20px 20px;
+			}
+
+			#merrakesh {
+				background-color: white;
+				background-image: radial-gradient(midnightblue 9px, transparent 10px),
+					repeating-radial-gradient(
+						midnightblue 0,
+						midnightblue 4px,
+						transparent 5px,
+						transparent 20px,
+						midnightblue 21px,
+						midnightblue 25px,
+						transparent 26px,
+						transparent 50px
+					);
+				background-size: 30px 30px, 90px 90px;
+				background-position: 0 0;
+			}
+
+			#rainbow-bokeh {
+				background: radial-gradient(
+							rgba(255, 255, 255, 0) 0,
+							rgba(255, 255, 255, 0.15) 30%,
+							rgba(255, 255, 255, 0.3) 32%,
+							rgba(255, 255, 255, 0) 33%
+						)
+						0 0,
+					radial-gradient(
+							rgba(255, 255, 255, 0) 0,
+							rgba(255, 255, 255, 0.1) 11%,
+							rgba(255, 255, 255, 0.3) 13%,
+							rgba(255, 255, 255, 0) 14%
+						)
+						0 0,
+					radial-gradient(
+							rgba(255, 255, 255, 0) 0,
+							rgba(255, 255, 255, 0.2) 17%,
+							rgba(255, 255, 255, 0.43) 19%,
+							rgba(255, 255, 255, 0) 20%
+						)
+						0 110px,
+					radial-gradient(
+							rgba(255, 255, 255, 0) 0,
+							rgba(255, 255, 255, 0.2) 11%,
+							rgba(255, 255, 255, 0.4) 13%,
+							rgba(255, 255, 255, 0) 14%
+						) -130px -170px,
+					radial-gradient(
+							rgba(255, 255, 255, 0) 0,
+							rgba(255, 255, 255, 0.2) 11%,
+							rgba(255, 255, 255, 0.4) 13%,
+							rgba(255, 255, 255, 0) 14%
+						)
+						130px 370px,
+					radial-gradient(
+							rgba(255, 255, 255, 0) 0,
+							rgba(255, 255, 255, 0.1) 11%,
+							rgba(255, 255, 255, 0.2) 13%,
+							rgba(255, 255, 255, 0) 14%
+						)
+						0 0,
+					linear-gradient(
+						45deg,
+						#343702 0%,
+						#184500 20%,
+						#187546 30%,
+						#006782 40%,
+						#0b1284 50%,
+						#760ea1 60%,
+						#83096e 70%,
+						#840b2a 80%,
+						#b13e12 90%,
+						#e27412 100%
+					);
+				background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px,
+					530px 530px, 730px 730px, 100% 100%;
+				background-color: #840b2a;
+			}
+
+			#cross-dots {
+				background: radial-gradient(black 3px, transparent 4px),
+					radial-gradient(black 3px, transparent 4px),
+					linear-gradient(#fff 4px, transparent 0),
+					linear-gradient(
+						45deg,
+						transparent 74px,
+						transparent 75px,
+						#a4a4a4 75px,
+						#a4a4a4 76px,
+						transparent 77px,
+						transparent 109px
+					),
+					linear-gradient(
+						-45deg,
+						transparent 75px,
+						transparent 76px,
+						#a4a4a4 76px,
+						#a4a4a4 77px,
+						transparent 78px,
+						transparent 109px
+					),
+					#fff;
+				background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px,
+					109px 109px;
+				background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h1>Background Patterns</h1>
+
+			<p>
+				These patterns are not background image files! They are done purely in
+				CSS. Take a look at the link below for more examples.
+			</p>
+			<h2>https://projects.verou.me/css3patterns/</h2>
+
+			<h1>Cross Dots</h1>
+			<div id="cross-dots"></div>
+
+			<h1>merrakesh</h1>
+			<div id="merrakesh"></div>
+
+			<h1>microbial-mat</h1>
+			<div id="microbial-mat"></div>
+
+			<h1>Rainbow-Bokeh</h1>
+			<div id="rainbow-bokeh"></div>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

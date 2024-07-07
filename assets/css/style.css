@@ -1,0 +1,59 @@
+/* General purpose style-sheet  */
+
+/* define variables for general use */
+:root {
+	--bgColor: whitesmoke;
+	--txtColor: slategray;
+	--bgColorStrong: darkblue;
+	--bgColorLight: rgb(191, 238, 222);
+	--bgColorPale: lightyellow;
+}
+
+/* These styles will apply to the everything, unless over-ridden */
+* {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* These styles will apply to the everything, unless over-ridden */
+body {
+	background-color: var(--bgColor);
+	color: var(--txtColor);
+}
+
+/* Style <pre> with a slightly larger font size */
+pre {
+	font-size: large;
+}
+
+/* Style <code> with a background color and larger font size */
+code {
+	background-color: var(--bgColorPale);
+	font-size: larger;
+}
+
+/* style the DIV that shows the HTML code */
+.coding {
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: var(--bgColorLight);
+}
+
+/* style the DIV that shows the resulting output from the HTML code */
+.result {
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: var(--bgColorLight);
+}
+
+/* style the Heading and Nav bar to stay at the top of the page */
+#fixedNav {
+	text-align: left;
+	border: 1px solid var(--bgColorStrong);
+	width: 100%;
+	padding: 1rem;
+	position: fixed;
+	top: 0px;
+	left: 1px;
+	background-color: var(--bgColorLight);
+}
