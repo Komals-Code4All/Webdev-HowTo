@@ -4,7 +4,7 @@
 
 Example code of how to do stuff in HTML, CSS and JavaScript
 
-<img src="assets/images/webDev.PNG>
+<img src="assets/images/webDev.PNG">
 
 This repo contains simple, worked examples of HTML, CSS and JS code showing how to do common things in web design and development.
 
