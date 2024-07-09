@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<!--  Extra <style> for your CSS file -->
+		<style>
+			.shape {
+				width: 150px;
+				height: 150px;
+			}
+			.square {
+				background-color: lightblue;
+			}
+
+			.rounded {
+				background-color: lightsalmon;
+				border-radius: 25%;
+			}
+			.circle {
+				background-color: lightskyblue;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<!--  main code for this example starts here ----------------->
+		<main>
+			<h1>Rounded Corners in CSS</h1>
+			<p>
+				Each shape below is first defined as a 150px square &lt;div&gt;. Use
+				CSS's
+				<code>border-radius</code> to change the corners' shape.
+			</p>
+			<p>border radius not set</p>
+			<div class="shape square"></div>
+			<p>border radius set to 25%</p>
+			<div class="shape rounded"></div>
+			<p>border radius set to 50%</p>
+			<div class="shape circle"></div>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

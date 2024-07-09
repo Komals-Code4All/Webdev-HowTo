@@ -3,10 +3,12 @@
 /* define variables for general use */
 :root {
 	--bgColor: whitesmoke;
-	--txtColor: slategray;
 	--bgColorStrong: darkblue;
 	--bgColorLight: rgb(191, 238, 222);
 	--bgColorPale: lightyellow;
+	--txtColor: slategray;
+	--txtColorDark: darkblue;
+	--txtColorHi: violet;
 }
 
 /* These styles will apply to the everything, unless over-ridden */
@@ -21,6 +23,21 @@ body {
 	color: var(--txtColor);
 }
 
+h1 {
+	color: var(--txtColor);
+}
+
+h2 {
+	color: var(--txtColorHi);
+}
+
+h3 {
+	color: var(--txtColorDark);
+}
+
+p {
+	color: var(--txtColorDark);
+}
 button {
 	transition-duration: 0.4s;
 }
