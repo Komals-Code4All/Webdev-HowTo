@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- RWD Example Using GRID System 
+ 
+This page starts with 5 columns, and drops down to 3, and then 1 column depending on
+screen size given in pixels
+
+-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RWD Grid Example 2</title>
+	</head>
+
+	<style>
+		/* apply to all elements */
+		* {
+			box-sizing: border-box;
+		}
+
+		header {
+			background-color: antiquewhite;
+		}
+		footer {
+			background-color: antiquewhite;
+		}
+
+		.aside {
+			text-align: center;
+		}
+
+		li {
+			background-color: dodgerblue;
+			color: #ffffff;
+			list-style: none;
+			margin-top: 2px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: dodgerblue;
+			background-color: #ffffff;
+		}
+
+		.red {
+			background-color: firebrick;
+			color: #ffffff;
+		}
+
+		.green {
+			background-color: forestgreen;
+			color: #ffffff;
+		}
+		.blue {
+			background-color: dodgerblue;
+			color: #ffffff;
+		}
+		.yellow {
+			background-color: goldenrod;
+			color: #ffffff;
+		}
+		.purple {
+			background-color: mediumslateblue;
+			color: #ffffff;
+		}
+
+		/* The outer row container */
+		.row::after {
+			content: "";
+			clear: both;
+			/* display: table; */
+			display: block; /* NB: this amended to BLOCK */
+		}
+
+		/* The page will have 3 columns : 25-50-25 % */
+		.column-25 {
+			width: 25%;
+		}
+
+		.column-50 {
+			width: 50%;
+		}
+
+		/* For all classes starting ".column" */
+		[class*="column-"] {
+			float: left;
+			padding: 5px;
+		}
+
+		/* For mobile devices, drop to 1 column */
+		@media screen and (max-width: 768px) {
+			[class*="column-"] {
+				width: 100%;
+			}
+		}
+	</style>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+		<header>
+			<h1>RWD Example Using GRID System.</h1>
+		</header>
+
+		<main>
+			<h2>Resize your browser and see the columns shuffle down.</h2>
+			<p>
+				In this example we start with 3 columns for larger screens. As the
+				screen gets smaller the columns start to stack on to of each other.
+			</p>
+
+			<!-- ONE Row, with 3 columns -->
+			<div class="row">
+				<p>
+					Note the 'empty' space going from 5 columns to 3. This is due to using
+					2 rows.
+				</p>
+				<div class="column-25 red">
+					<h2>Column 1</h2>
+					<ul>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+					</ul>
+				</div>
+
+				<div class="column-50">
+					<h2>Column 2 - Main Content</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum."
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum."
+					</p>
+				</div>
+
+				<div class="column-25">
+					<div class="aside blue">
+						<h2>Column 3</h2>
+						<h3>ASIDE</h3>
+						<p>blah blah blah</p>
+						<h3>ASIDE</h3>
+						<p>blah blah blah</p>
+						<h3>ASIDE</h3>
+						<p>blah blah blah</p>
+						<h3>ASIDE</h3>
+						<p>blah blah blah</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- bottom of page -->
+		<footer>
+			<h2>&copy footer text</h2>
+		</footer>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

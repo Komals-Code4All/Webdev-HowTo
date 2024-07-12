@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- RWD using GRID System -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RWD Grid Basics</title>
+	</head>
+
+	<style>
+		* {
+			margin-top: 5px;
+			box-sizing: border-box; /* NB: border box */
+		}
+
+		/* The 'row' class doesn't need to be styled. It's shown for clarity.
+		.row {
+		}
+		*/
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		/* Define each of the 12 columns taking 8.33% of the 100% page wide */
+		.col-01 {
+			width: 8.33%;
+		}
+		.col-02 {
+			width: 16.66%;
+		}
+		.col-03 {
+			width: 25%;
+		}
+		.col-04 {
+			width: 33.33%;
+		}
+		.col-05 {
+			width: 41.66%;
+		}
+		.col-06 {
+			width: 50%;
+		}
+		.col-07 {
+			width: 58.33%;
+		}
+		.col-08 {
+			width: 66.66%;
+		}
+		.col-09 {
+			width: 75%;
+		}
+		.col-10 {
+			width: 83.33%;
+		}
+		.col-11 {
+			width: 91.66%;
+		}
+		.col-12 {
+			width: 100%;
+		}
+
+		/* Give all these col-nn classes the same float and padding */
+		[class*="col-"] {
+			float: left;
+			padding: 5px;
+			background-color: bisque; /* change as needed */
+			border: 1px solid red; /* change as needed */
+		}
+
+		.blueShade {
+			background-color: azure;
+		}
+	</style>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<header>
+			<h1>RWD using GRID System.</h1>
+
+			<h3>
+				NB: This is not strictly RWD. The columns do NOT stack on top of each
+				other for mobile phone screens. See other RWD examples provided here.
+			</h3>
+			<p>For the GRID System, imagine the page is divided into 12 columns.</p>
+			<p>
+				Using 100% of the page's width means each column is 100% / 12 = 8.33333%
+				wide. In CSS define classes for each column, where col-01 is 8.33% wide,
+				col-02 is 16.66% wide, and so on.
+			</p>
+			<p>
+				Now, one 'row' is an outer container made up of these twelve columns.
+				Divide the row into as many columns as you need, but remember that the
+				<span class="blueShade"
+					>total width of all columns must = 12 columns</span
+				>.
+			</p>
+		</header>
+
+		<main>
+			<!-- The Header row, spanning across the whole page-->
+			<div class="row">
+				<div class="col-12">
+					<h2>One row of one column</h2>
+				</div>
+			</div>
+
+			<!-- Row made up of 2 columns, 6 + 6 = 12 -->
+			<div class="row">
+				<div class="col-06">
+					<h2>6 widths</h2>
+				</div>
+				<div class="col-06">
+					<h2>6 widths</h2>
+				</div>
+			</div>
+
+			<!-- 2-column row, 4 + 8 = 12 -->
+			<div class="row">
+				<div class="col-04">
+					<h2>4 widths</h2>
+				</div>
+				<div class="col-08">
+					<h2>8 widths</h2>
+				</div>
+			</div>
+
+			<!-- 4-column row : 3 * 4 = 12-->
+			<div class="row">
+				<div class="col-03">
+					<h2>3 widths</h2>
+				</div>
+				<div class="col-03">
+					<h2>3 widths</h2>
+				</div>
+
+				<div class="col-03">
+					<h2>3 widths</h2>
+				</div>
+
+				<div class="col-03">
+					<h2>3 widths</h2>
+				</div>
+			</div>
+
+			<!-- 6-column row : 1 + 2 + 3 + 3 + 2 + 1 = 12 columns-->
+			<div class="row">
+				<div class="col-01">
+					<h2>1 width</h2>
+				</div>
+				<div class="col-02">
+					<h2>2 widths</h2>
+				</div>
+
+				<div class="col-03">
+					<h2>3 widths</h2>
+				</div>
+
+				<div class="col-03">
+					<h2>3 widths</h2>
+				</div>
+				<div class="col-02">
+					<h2>2 widths</h2>
+				</div>
+
+				<div class="col-01">
+					<h2>1 width</h2>
+				</div>
+			</div>
+
+			<!-- Further examples -->
+			<br />
+			<hr />
+
+			<h2>Classic Layout Examples</h2>
+			<!-- Header row, across the whole page-->
+			<div class="row">
+				<div class="col-12 blueShade">
+					<h2>Main Page Heading</h2>
+				</div>
+			</div>
+
+			<!-- 2-column row -->
+			<div class="row">
+				<div class="col-02 blueShade">
+					<h2>Side Nav Bar</h2>
+					<ul>
+						<li><a href="#">Item A</a></li>
+						<li><a href="#">Item B</a></li>
+						<li><a href="#">Item C</a></li>
+						<li><a href="#">Item D</a></li>
+					</ul>
+				</div>
+				<div class="col-10 blueShade">
+					<h2>Contents</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum."
+					</p>
+				</div>
+			</div>
+
+			<!-- Page footer : row / col used just for consistency -->
+			<footer>
+				<div class="row">
+					<div class="col-12 blueShade">
+						<h2>&copy footer text</h2>
+					</div>
+				</div>
+			</footer>
+			<!-- insert standard footer -->
+			<embed
+				type="text/html"
+				src="assets/embedCode/stdFooter.html"
+				width="100%"
+			/>
+		</main>
+	</body>
+</html>

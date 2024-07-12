@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- RWD Example Using GRID System 
+ 
+	In this version we design for mobile FIRST
+
+	So, initially all columns will be 100% wide,
+	but if the screen is LARGER than 768px then we apply column percentages 
+
+-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RWD Grid Example 3</title>
+	</head>
+
+	<style>
+		/* apply to all elements */
+		* {
+			box-sizing: border-box;
+		}
+
+		header {
+			background-color: antiquewhite;
+		}
+		footer {
+			background-color: antiquewhite;
+		}
+
+		.red {
+			background-color: firebrick;
+		}
+
+		.green {
+			background-color: forestgreen;
+		}
+		.blue {
+			background-color: dodgerblue;
+		}
+		.yellow {
+			background-color: goldenrod;
+		}
+		.purple {
+			background-color: mediumslateblue;
+		}
+
+		/* The outer row container */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		/* Start with 1 column, 100% wide */
+		.column {
+			height: 250px;
+			width: 100%;
+			float: left;
+			padding: 5px;
+		}
+
+		/* Increase to 3 columns for tablet sizes, 33.33% width */
+		@media screen and (min-width: 768px) {
+			.column {
+				width: 33.33%;
+			}
+		}
+	</style>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+		<header>
+			<h1>RWD Example Using GRID System.</h1>
+		</header>
+
+		<main>
+			<h2>Resize your browser and see the columns shuffle down.</h2>
+			<p>
+				Design for mobile first. In this example, the styling is for columns
+				100% wide. If the browser is expanded then @media query kicks in to go
+				to 3 columns wide.
+			</p>
+			<!-- 4 column row -->
+			<div class="row">
+				<div class="column red">
+					<h2>Column 1</h2>
+				</div>
+				<div class="column green">
+					<h2>Column 2</h2>
+				</div>
+
+				<div class="column blue">
+					<h2>Column 3</h2>
+				</div>
+
+				<div class="column yellow">
+					<h2>Column 4</h2>
+				</div>
+				<div class="column purple">
+					<h2>Column 5</h2>
+				</div>
+
+				<div class="row">
+					<div class="column red">
+						<h2>Column 6</h2>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- bottom of page -->
+		<footer>
+			<h2>&copy footer text</h2>
+		</footer>
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>
