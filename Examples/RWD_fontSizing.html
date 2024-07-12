@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<style>
+			* {
+				margin-top: 5px;
+				box-sizing: border-box; /* NB: border box */
+			}
+
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+			/* Mobile 1st : Default to 1 column */
+			.column {
+				width: 100%;
+				float: left;
+				border: 1px solid dodgerblue;
+			}
+
+			/* Mobile 1st: Design for small screen size */
+			.rwdFont {
+				font-family: "Times New Roman", Times, serif;
+				font-size: 25px;
+			}
+
+			/* On larger screens,  */
+			@media screen and (min-width: 481px) {
+				/* make the font larger */
+				.rwdFont {
+					font-size: 50px;
+				}
+
+				/* Use 2 columns */
+				.column {
+					width: 50%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<div class="row">
+				<div class="column">
+					<h1 class="rwdFont">
+						<em>RWD:</em><br />
+						This font changes size when you resize the browser.
+					</h1>
+				</div>
+
+				<div class="column">
+					<h1>
+						<em>Non-RWD</em><br />
+						This font stays the same size.
+					</h1>
+				</div>
+			</div>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>
