@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<title>Flexbox</title>
+
+		<style>
+			a {
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: dodgerblue;
+				background-color: burlywood;
+			}
+
+			/* Mobile 1st: 
+			i.e. designed for single column on a mobile screen */
+			.flex-container {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				justify-content: center;
+				background-color: DodgerBlue;
+				margin: 0;
+			}
+
+			.flex-container > div {
+				background-color: #f1f1f1;
+				margin: 2px;
+			}
+
+			#navbar {
+				width: 100%;
+			}
+
+			#main {
+				width: 100%;
+				padding: 3px;
+			}
+			#main > p::first-letter {
+				background-color: gold;
+				font-size: xx-large;
+			}
+			#aside {
+				width: 100%;
+				text-align: center;
+			}
+
+			li {
+				list-style: none;
+			}
+
+			/* for screens wider than a mobile */
+			@media screen and (min-width: 481px) {
+				.flex-container {
+					flex-direction: row;
+				}
+				#navbar {
+					width: 20%;
+				}
+
+				#main {
+					width: 55%;
+				}
+				#aside {
+					width: 20%;
+				}
+			} /* end of media query */
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<header>
+			<h1>RWD Using Flexbox</h1>
+			<h3>
+				"Inspect" and check "Dimensions: Responsive" to see this page on small
+				screens
+			</h3>
+		</header>
+
+		<main>
+			<div class="flex-container">
+				<div id="navbar">
+					<h1>Nav Bar</h1>
+					<ul>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+						<li><a href="#">List Item</a></li>
+					</ul>
+				</div>
+				<div id="main">
+					<h1>Main Content</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum."
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum."
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum."
+					</p>
+				</div>
+				<div id="aside">
+					<h1>Aside</h1>
+					<h2>aside</h2>
+					<p>blah blah blah blah</p>
+
+					<h2>aside</h2>
+					<p>blah blah blah blah</p>
+
+					<h2>aside</h2>
+					<p>blah blah blah blah blah blah blah blah</p>
+				</div>
+			</div>
+		</main>
+		<!-- bottom of page -->
+		<footer>
+			<h2>&copy footer goes here</h2>
+		</footer>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>
