@@ -4,6 +4,8 @@
 
 Example code of how to do stuff in HTML, CSS and JavaScript
 
+Use this link to see the <a href="https://komals-code4all.github.io/Webdev-HowTo/" target="_blank">Examples</a>
+
 <img src="Examples/assets/images/webDev.PNG">
 
 This repo contains simple, worked examples of HTML, CSS and JS code showing how to do common things in web design and development.
