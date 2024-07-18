@@ -42,6 +42,14 @@ button {
 	transition-duration: 0.4s;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--bgColor); /* reverse the fore ground and background colors */
+	background-color: var(--txtColor);
+}
 button:hover {
 	color: var(--bgColor); /* reverse the fore ground and background colors */
 	background-color: var(--txtColor);

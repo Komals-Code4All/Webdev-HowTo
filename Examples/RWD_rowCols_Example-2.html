@@ -9,21 +9,19 @@ screen size given in pixels
 
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>RWD Grid Example 2</title>
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
 	</head>
 
 	<style>
 		/* apply to all elements */
 		* {
 			box-sizing: border-box;
-		}
-
-		header {
-			background-color: antiquewhite;
-		}
-		footer {
-			background-color: antiquewhite;
 		}
 
 		.aside {
@@ -47,21 +45,17 @@ screen size given in pixels
 		}
 
 		.red {
-			background-color: firebrick;
-			color: #ffffff;
+			background-color: palevioletred;
 		}
 
 		.green {
-			background-color: forestgreen;
-			color: #ffffff;
+			background-color: palegreen;
 		}
 		.blue {
-			background-color: dodgerblue;
-			color: #ffffff;
+			background-color: paleturquoise;
 		}
 		.yellow {
-			background-color: goldenrod;
-			color: #ffffff;
+			background-color: palegoldenrod;
 		}
 		.purple {
 			background-color: mediumslateblue;
@@ -106,25 +100,21 @@ screen size given in pixels
 			src="assets/embedCode/stdHeader.html"
 			width="100%"
 		/>
-		<header>
-			<h1>RWD Example Using GRID System.</h1>
-		</header>
 
 		<main>
-			<h2>Resize your browser and see the columns shuffle down.</h2>
+			<h2>RWD Example Using Rows and Columns</h2>
+			<h3>Resize your browser and see the columns shuffle down.</h3>
+			<p>In this example we start with 3 columns for larger screens.</p>
 			<p>
-				In this example we start with 3 columns for larger screens. As the
-				screen gets smaller the columns start to stack on to of each other.
+				As the screen gets smaller the columns stack on top of each other, with
+				width equal to 100% of the page size.
 			</p>
 
 			<!-- ONE Row, with 3 columns -->
 			<div class="row">
-				<p>
-					Note the 'empty' space going from 5 columns to 3. This is due to using
-					2 rows.
-				</p>
 				<div class="column-25 red">
-					<h2>Column 1</h2>
+					<h2>Column-1</h2>
+					<h3>25% width</h3>
 					<ul>
 						<li><a href="#">List Item</a></li>
 						<li><a href="#">List Item</a></li>
@@ -135,7 +125,9 @@ screen size given in pixels
 				</div>
 
 				<div class="column-50">
-					<h2>Column 2 - Main Content</h2>
+					<h2>Column-2</h2>
+					<h3>50% width</h3>
+
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -158,8 +150,8 @@ screen size given in pixels
 
 				<div class="column-25">
 					<div class="aside blue">
-						<h2>Column 3</h2>
-						<h3>ASIDE</h3>
+						<h2>Column-3</h2>
+						<h3>25% width</h3>
 						<p>blah blah blah</p>
 						<h3>ASIDE</h3>
 						<p>blah blah blah</p>
@@ -171,11 +163,6 @@ screen size given in pixels
 				</div>
 			</div>
 		</main>
-
-		<!-- bottom of page -->
-		<footer>
-			<h2>&copy footer text</h2>
-		</footer>
 
 		<!-- insert standard footer -->
 		<embed
