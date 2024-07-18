@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<!--  main code for this example starts here ----------------->
+		<main>
+			<h2>Embedding Video</h2>
+
+			<h4>Note: This video doesn't have any sound</h4>
+
+			<!-- Optional attributes : autoplay , loop, controls  etc -->
+			<video
+				height="320px"
+				width="480px"
+				controls
+				autoplay
+				muted
+				loop
+				type="video/mp4"
+				src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4"
+			>
+				<p>Your browser doesn't support HTML5 video</p>
+				<a
+					href="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4"
+					>Link to the video</a
+				>
+			</video>
+
+			<pre><code>
+<strong>&lt;video&gt;</strong> controls autoplay muted loop height=320px width=480px>
+  <strong>&lt;source&gt;</strong> src=<em>&quot;link to source file&quot;</em> />
+	Oops! Seems your browser does not support video.
+<strong>&lt;/audio&gt;</strong></code></pre>
+
+			<ul>
+				<li><em>controls</em> - display stop/play controls</li>
+				<li><em>autoplay</em> - start playing when page loads</li>
+				<li><em>muted</em> - play audio but muted</li>
+				<li><em>loop</em> - play repeatedly</li>
+			</ul>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

@@ -73,6 +73,11 @@ code {
 	background-color: var(--bgColorLight);
 }
 
+/* this turns block elements to in-line elements */
+.inline {
+	display: inline-block;
+}
+
 /* style the Heading and Nav bar to stay at the top of the page */
 #fixedNav {
 	text-align: left;
