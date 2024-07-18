@@ -26,20 +26,22 @@
 			.column {
 				width: 100%;
 				float: left;
-				border: 1px solid dodgerblue;
+				border: 1px solid purple;
 			}
 
 			/* Mobile 1st: Design for small screen size */
 			.rwdFont {
 				font-family: "Times New Roman", Times, serif;
 				font-size: 25px;
+				color: brown;
 			}
 
 			/* On larger screens,  */
-			@media screen and (min-width: 481px) {
+			@media screen and (min-width: 600px) {
 				/* make the font larger */
 				.rwdFont {
 					font-size: 50px;
+					color: green;
 				}
 
 				/* Use 2 columns */
@@ -59,19 +61,25 @@
 		/>
 
 		<main>
+			<h2>RWD Font Sizing with Media Query</h2>
+			<p>
+				The bordered-boxes are two &lt;div&gt;s. They start as 2 columns and
+				will drop down to 1 column when the browser is less than 600px wide.
+			</p>
 			<div class="row">
 				<div class="column">
-					<h1 class="rwdFont">
+					<p class="rwdFont">
 						<em>RWD:</em><br />
-						This font changes size when you resize the browser.
-					</h1>
+						This font changes size and colour when you resize the browser to
+						less than 600px wide.
+					</p>
 				</div>
 
 				<div class="column">
-					<h1>
+					<p>
 						<em>Non-RWD</em><br />
 						This font stays the same size.
-					</h1>
+					</p>
 				</div>
 			</div>
 		</main>
