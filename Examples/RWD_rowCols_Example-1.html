@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- RWD Example Using GRID System 
- 
-This page starts with 5 columns, and drops down to 3, and then 1 column depending on
-screen size given in pixels
-
--->
-
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>RWD Grid Example 1</title>
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
 	</head>
 
 	<style>
@@ -19,30 +17,25 @@ screen size given in pixels
 			box-sizing: border-box;
 		}
 
-		header {
-			background-color: antiquewhite;
+		div {
+			margin-bottom: 2px;
 		}
-		footer {
-			background-color: antiquewhite;
+		div > h2 {
+			color: black;
 		}
-
 		.red {
-			background-color: firebrick;
+			background-color: palevioletred;
 		}
 
 		.green {
-			background-color: forestgreen;
+			background-color: palegreen;
 		}
 		.blue {
-			background-color: dodgerblue;
+			background-color: paleturquoise;
 		}
 		.yellow {
-			background-color: goldenrod;
+			background-color: palegoldenrod;
 		}
-		.purple {
-			background-color: mediumslateblue;
-		}
-
 		/* The outer row container */
 		.row::after {
 			content: "";
@@ -50,18 +43,17 @@ screen size given in pixels
 			display: table;
 		}
 
-		/* Start with 5 columns, 20% width */
+		/* Start with 4 columns, 25% width */
 		.column {
-			height: 250px;
-			width: 20%;
+			width: 25%;
 			float: left;
 			padding: 5px;
 		}
 
-		/* Drop down to 3 columns for tablet sizes, 33.33% width */
-		@media screen and (max-width: 720px) {
+		/* Drop down to 2 columns for tablet sizes, 50% width */
+		@media screen and (max-width: 768px) {
 			.column {
-				width: 33.33%;
+				width: 50%;
 			}
 		}
 		/* Drop down further to 1 column for smart phone sizes, 100% width */
@@ -79,61 +71,58 @@ screen size given in pixels
 			src="assets/embedCode/stdHeader.html"
 			width="100%"
 		/>
-		<header>
-			<h1>RWD Example Using GRID System.</h1>
-		</header>
 
 		<main>
-			<h2>Resize your browser and see the columns shuffle down.</h2>
-			<p>
-				Note the 'empty' space going from 5 columns to 3. This is due to using 2
-				rows.
-			</p>
-			<!-- 4 column row -->
-			<div class="row">
-				<div class="column red">
-					<h2>Column 1</h2>
-				</div>
-				<div class="column green">
-					<h2>Column 2</h2>
-				</div>
+			<h2>RWD Example Using Rows and Columns</h2>
+			<h3>
+				Resize your browser and see the columns drop down to 2 columns and then
+				1 column.
+			</h3>
 
-				<div class="column blue">
-					<h2>Column 3</h2>
-				</div>
+			<div>
+				<!-- 4 column row -->
+				<div class="row">
+					<div class="column red">
+						<h2>Row 1, Col 1</h2>
+						<p>Some text..</p>
+					</div>
+					<div class="column yellow">
+						<h2>Row 1,Col 2</h2>
+						<p>Some text..</p>
+					</div>
 
-				<div class="column yellow">
-					<h2>Column 4</h2>
-				</div>
-				<div class="column purple">
-					<h2>Column 5</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="column red">
-					<h2>Column 1</h2>
-				</div>
-				<div class="column green">
-					<h2>Column 2</h2>
-				</div>
+					<div class="column blue">
+						<h2>Row 1,Col 3</h2>
+						<p>Some text..</p>
+					</div>
 
-				<div class="column blue">
-					<h2>Column 3</h2>
+					<div class="column green">
+						<h2>Row 1,Col 4</h2>
+						<p>Some text..</p>
+					</div>
 				</div>
+				<div class="row">
+					<div class="column red">
+						<h2>Row 2,Col 1</h2>
+						<p>Some text..</p>
+					</div>
+					<div class="column yellow">
+						<h2>Row 2,Col 2</h2>
+						<p>Some text..</p>
+					</div>
 
-				<div class="column yellow">
-					<h2>Column 4</h2>
-				</div>
-				<div class="column purple">
-					<h2>Column 5</h2>
+					<div class="column blue">
+						<h2>Row 2,Col 3</h2>
+						<p>Some text..</p>
+					</div>
+
+					<div class="column green">
+						<h2>Row 2,Col 4</h2>
+						<p>Some text..</p>
+					</div>
 				</div>
 			</div>
 		</main>
-
-		<!-- bottom of page -->
-		<footer>
-			<h2>&copy footer text</h2>
-		</footer>
 
 		<!-- insert standard footer -->
 		<embed

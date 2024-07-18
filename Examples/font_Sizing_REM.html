@@ -1,0 +1,97 @@
+<!-- Use rem units to create three boxes of the correct height -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<style>
+			:root {
+				font-size: 20px;
+			}
+
+			div {
+				border: 1px solid chocolate;
+				margin: 5px;
+				width: 75%;
+				font-size: 5px;
+			}
+
+			.rem1 {
+				font-size: 1rem;
+				background: lightcoral;
+			}
+
+			.rem2 {
+				font-size: 2rem;
+				background: lightseagreen;
+			}
+
+			.rem3 {
+				font-size: 3rem;
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>Font sizing with root-em (REM)</h2>
+			<h3>REM is relative to the font-size of the <em>root</em> element.</h3>
+			<p>
+				In this example root font-size has been set to 20px for the entire page
+				using the code below.
+			</p>
+
+			<p>
+				<code
+					>&lt;style&gt;<br />
+					:root { font-size: 20px; }<br />&lt;/style&gt;
+				</code>
+			</p>
+
+			<p>
+				So, 1rem = 20px, 1.5rem = 30px, 2rem = 40px, 3rem = 60px, and so on.
+			</p>
+
+			<div class="rem1">
+				<p>font-size 1rem = 20px</p>
+			</div>
+			<div class="rem2">
+				<p>font-size 2rem = 40px</p>
+			</div>
+			<div class="rem3">
+				<p>font-size 3rem = 60px</p>
+			</div>
+
+			<h3>&lt;div&gt;s within &lt;div&gt;s</h3>
+			<p>NB: REM is relative to the root, not to the previous container.</p>
+			<div class="rem3">
+				<p>outer</p>
+				<div class="rem2">
+					<p>first inner</p>
+					<div class="rem1"><p>second inner</p></div>
+				</div>
+			</div>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

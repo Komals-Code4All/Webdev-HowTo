@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<style>
+			p {
+				border: 2px solid chocolate;
+				width: 25%;
+			}
+
+			div {
+				border: 1px solid chocolate;
+				font-size: larger;
+				font-weight: bolder;
+				width: 75%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- the following literals can be used to set font sizes, relative to 'medium'
+
+        medium		Sets the font-size to a medium size. This is default
+        xx-small	Sets the font-size to an xx-small size
+        x-small		Sets the font-size to an extra small size
+        small		  Sets the font-size to a small size
+        large		  Sets the font-size to a large size
+        x-large		Sets the font-size to an extra large size
+        xx-large	Sets the font-size to an xx-large size
+        xxx-large	Sets the font-size to an xxx-large size
+        smaller		Sets the font-size to a smaller size than the parent element
+        larger		Sets the font-size to a larger size than the parent element
+        length		Sets the font-size to a fixed size in px, em, rem etc
+        %			    Sets the font-size to a percent of the parent element's font size
+        inherit		Inherits this property from its parent element
+        initial		Sets this property to its default value	
+    
+    -->
+
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>Font Sizing with Literal Keywords</h2>
+
+			<h3>
+				Fonts can be sized using percentages, pixels or these literal keywords;
+			</h3>
+			<h4>
+				<ul>
+					<li>
+						<code>font-size: x-small</code> Sets the font-size to an extra small
+						size
+					</li>
+					<li>
+						<code>font-size: small</code> Sets the font-size to a small size
+					</li>
+					<li>
+						<code>font-size: large</code> Sets the font-size to a large size
+					</li>
+					<li>
+						<code>font-size: x-large</code> Sets the font-size to an extra large
+						size
+					</li>
+				</ul>
+			</h4>
+
+			<h3>Paragraphs styled with font-size literals</h3>
+			<p style="font-size: xx-small">xx-small</p>
+			<p style="font-size: x-small">x-small</p>
+			<p style="font-size: small">small</p>
+			<p style="font-size: medium">medium (default)</p>
+			<p style="font-size: large">large</p>
+			<p style="font-size: x-large">x-large</p>
+			<p style="font-size: xx-large">xx-large</p>
+			<p style="font-size: xxx-large">xxx-large</p>
+
+			<h3>Paragraphs styled with font-weight</h3>
+			<p style="font-weight: 100">Weight 100</p>
+			<p style="font-weight: 200">Weight 200</p>
+			<p style="font-weight: 400">Weight 400 ('normal')</p>
+			<p style="font-weight: bolder">Weight bolder</p>
+			<p style="font-weight: 500">Weight 500</p>
+			<p style="font-weight: 700">Weight 700 ('bold')</p>
+			<p style="font-weight: 900">Weight 900</p>
+			<p style="font-weight: lighter">Weight lighter</p>
+		</main>
+
+		<h3>
+			Sizes and weights are relative to their container, eg &lt;div&gt;s within
+			&lt;div&gt;s
+		</h3>
+		<code>
+			<strong>&lt;style&gt;</strong>div { font-size: larger; font-weight:
+			bolder; }<strong>&lt;/style&gt</strong>;
+		</code>
+		<div>
+			When using font-size literals
+			<div>
+				size is relative
+				<div>
+					to the container
+					<div>it's in</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

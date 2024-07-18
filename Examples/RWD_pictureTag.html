@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h1>RWD and the Picture Tag</h1>
+
+			<h2>Resize the window to see Media Query in action.</h2>
+			<p>
+				This uses the &lt;picture&gt; and &lt;source&gt; tags to define
+				different images that fit the page size.
+			</p>
+
+			<picture>
+				<source
+					srcset="
+						https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-small.jpg
+					"
+					media="(max-width:600px)"
+				/>
+				<source
+					srcset="
+						https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-portrait.jpg
+					"
+					media="(max-width:800px)"
+				/>
+				<img
+				src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-landscape.jpg"
+				alt="Photograph of a laptop, notepad and a mug of cappuccino coffee on a
+				wooden desk." / >
+			</picture>
+
+			<p>
+				Images from Code Institute's <em><u>codeInstitute.net</u></em>
+			</p>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

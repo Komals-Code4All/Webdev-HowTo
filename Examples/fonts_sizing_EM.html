@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<style>
+			div {
+				border: 2px solid chocolate;
+				width: 75%;
+			}
+			.larger {
+				font-size: 1.25em;
+			}
+			.smaller {
+				font-size: 0.75em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>Font Sizing with EM</h2>
+			<h3>By default font size is 16px, or 1em.</h3>
+			<p>
+				&quot;EM&quot; represents upper-case letter M's width. Other letters are
+				then sized relative to this width.
+			</p>
+
+			<p>
+				<code>&lt;style&gt;</code>
+			</p>
+			<p><code>.smaller { font-size: 0.75em; }</code></p>
+			<p><code>.larger { font-size: 1.25em; }</code></p>
+			<p>
+				<code>&lt;/style&gt;</code>
+			</p>
+			<br />
+			<h3>
+				Embed <code>&lt;div class=smaller&gt; </code>to get fonts getting
+				relatively smaller by 0.75em
+			</h3>
+			<div class="smaller">
+				<p>outer div</p>
+				<div class="smaller">
+					<p>first enclosed div</p>
+					<div class="smaller"><p>second enclosed div</p></div>
+				</div>
+			</div>
+			<br />
+			<h3>
+				Embed <code>&lt;div class-larger&gt; </code>to get fonts getting
+				relatively larger by 1.25em
+			</h3>
+			<div class="larger">
+				<p>outer div</p>
+				<div class="larger">
+					<p>first enclosed div</p>
+					<div class="larger"><p>second enclosed div</p></div>
+				</div>
+			</div>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>
