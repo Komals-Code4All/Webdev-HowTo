@@ -1,10 +1,8 @@
 # Webdev-HowTo
 
-## Web Developement How To Sample Code
+## 'How-To' do things in HTML, CSS and JavaScript
 
-Example code of how to do stuff in HTML, CSS and JavaScript
-
-Use this link to see the <a href="https://komals-code4all.github.io/Webdev-HowTo/" target="_blank">Examples</a>
+Click <a href="https://komals-code4all.github.io/Webdev-HowTo/" target="_blank">HERE</a> to view as web pages.
 
 <img src="Examples/assets/images/webDev.PNG">
 
