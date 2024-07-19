@@ -50,6 +50,16 @@ a:hover {
 	color: var(--bgColor); /* reverse the fore ground and background colors */
 	background-color: var(--txtColor);
 }
+
+thead {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+tr:nth-child(even) {
+	background-color: var(--bgColorLight);
+}
+
 button:hover {
 	color: var(--bgColor); /* reverse the fore ground and background colors */
 	background-color: var(--txtColor);

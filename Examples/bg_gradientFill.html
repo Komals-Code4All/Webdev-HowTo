@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<style>
+			div {
+				height: 200px;
+				width: 75%;
+			}
+
+			.div1 {
+				background-image: linear-gradient(red, yellow);
+			}
+
+			.div2 {
+				background-image: linear-gradient(to right, red, yellow);
+			}
+
+			.div3 {
+				background-image: linear-gradient(to left bottom, red, yellow);
+			}
+
+			.div4 {
+				background-image: linear-gradient(to right bottom, red, yellow);
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>Gradient Fill Backgrounds</h2>
+			<p>
+				You can apply CSS {background-image : gradient-fills} at the
+				<code>&lt;body&gt;</code> level to fill the whole page.
+			</p>
+			<p>
+				Here, CSS classes are defined and used to fill the four
+				<code>&lt;div&gt;</code>s below.
+			</p>
+
+			<p><code>{background-image: linear-gradient(red, yellow);}</code></p>
+			<div class="div1"><h3>Linear fill, defaults top to bottom</h3></div>
+
+			<br />
+			<p>
+				<code>{background-image: linear-gradient(to right, red, yellow);}</code>
+			</p>
+			<div class="div2"><h3>Linear fill, set to go left to right</h3></div>
+
+			<br />
+			<p>
+				<code>
+					{background-image: linear-gradient(to left bottom, red,
+					yellow);}</code
+				>
+			</p>
+
+			<div class="div3">
+				<h3>Linear fill, set to go top right to bottom left corner</h3>
+			</div>
+
+			<br />
+			<p>
+				<code>
+					{background-image: linear-gradient(to right bottom, red, yellow);}
+				</code>
+			</p>
+			<div class="div4">
+				<h3>Linear fill, set to go top left to bottom right corner</h3>
+			</div>
+
+			<!-- insert standard footer -->
+			<embed
+				type="text/html"
+				src="assets/embedCode/stdFooter.html"
+				width="100%"
+			/>
+		</main>
+	</body>
+</html>
