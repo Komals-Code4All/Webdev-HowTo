@@ -10,44 +10,54 @@
 
 /* Array to hold program names and their description */
 codeList = [
-	["bg_gradientFill.html", "Backgrounds", "Use a gradient-fill colour"],
-	["bg_imageFixed.html", "Backgrounds", "Set a fixed background image"],
-	["bg_patterns.html", "Backgrounds", "Use CSS pattern to fill the background"],
+	["bg_gradientFill.html", "Backgrounds", "Use a gradient-fill colour."],
+	["bg_imageFixed.html", "Backgrounds", "Set a fixed background image."],
+	[
+		"bg_patterns.html",
+		"Backgrounds",
+		"Use CSS pattern to fill the background.",
+	],
 
-	["button_popupAlert.html", "Buttons", "Have an alert message pop-up"],
-	["button_popupInput.html", "Buttons", "Have an input message pop-up"],
+	["button_popupAlert.html", "HTML", "Buttons - have an alert message pop-up."],
+	["button_popupAlert.html", "HTML", "Buttons - have an alert message pop-up."],
+
+	["HTML_tables.html", "HTML", "Tables - Understanding table elements."],
 
 	["CSS_displayNone.html", "CSS", "Hide elements using DISPLAY."],
 	["CSS_visibilityNone.html", "CSS", "Hide elements using VISIBILITY."],
-	["CSS_inlineBlock.html", "CSS", "Make block elements appear in-line"],
-	["CSS_roundedCorners.html", "CSS", "Give elements a rounded corner"],
+	["CSS_inlineBlock.html", "CSS", "Make block elements appear in-line."],
+	["CSS_roundedCorners.html", "CSS", "Give elements a rounded corner."],
 
-	["autoTitle.html", "Embed", "Extract &lt;title&gt; tag for &lt;h1&gt;header"],
-	["embedAudio.html", "Embed", "Insert playable audio on your page"],
-	["embedVideo.html", "Embed", "Insert playable video on your page"],
+	[
+		"autoTitle.html",
+		"Embed",
+		"Extract &lt;title&gt; tag for &lt;h1&gt;header.",
+	],
+	["embedAudio.html", "Embed", "Insert playable audio on your page."],
+	["embedVideo.html", "Embed", "Insert playable video on your page."],
 
-	["characterCodes.html", "Fonts", "Use special characters and emojis"],
-	["fonts_fontShadows.html", "Fonts", "Add shadows to text fonts"],
-	["fonts_googleFonts.html", "Fonts", "Use Google fonts"],
-	["fonts_sizing_EM.html", "Fonts", "Change font sizes relatively using EM "],
-	["fonts_sizing_Literals.html", "Fonts", "Change font sizes using literals"],
-	["fonts_sizing_REM.html", "Fonts", "Change font sizes using Root-EM "],
+	["characterCodes.html", "Fonts", "Use special characters and emojis."],
+	["fonts_fontShadows.html", "Fonts", "Add shadows to text fonts."],
+	["fonts_googleFonts.html", "Fonts", "Use Google fonts."],
+	["fonts_sizing_EM.html", "Fonts", "Change font sizes relatively using EM."],
+	["fonts_sizing_Literals.html", "Fonts", "Change font sizes using literals."],
+	["fonts_sizing_REM.html", "Fonts", "Change font sizes using Root-EM."],
 
-	["heroImage.html", "Images", "Insert a Hero image with overlay text"],
+	["heroImage.html", "Images", "Insert a Hero image with overlay text."],
 
-	["input_dropDownData.html", "Forms", "Create a drop-down input box"],
+	["input_dropDownData.html", "Forms", "Create a drop-down input box."],
 
-	["navbar_top.html", "Navbar", "Have a nav-bar at the top of the webpage"],
-	["navbar_topFixed.html", "Navbar", "Have a nav-bar fixed across the top"],
+	["navbar_top.html", "Navbar", "Have a nav-bar at the top of the webpage."],
+	["navbar_topFixed.html", "Navbar", "Have a nav-bar fixed across the top."],
 
-	["RWD_flexbox_Basics.html", "RWD", "Use flexbox for Responsive Web Design"],
-	["RWD_flexbox_Example-1.html", "RWD", "Flexbox example"],
-	["RWD_fontSizing.html", "RWD", "font sizing"],
-	["RWD_pictureTag.html", "RWD", "Use &lt;picture&gt; for RWD"],
-	["RWD_rowCols_Basics.html", "RWD", "Using rows and columns"],
-	["RWD_rowCols_Example-1.html", "RWD", "Rows and Cols Example 1 "],
-	["RWD_rowCols_Example-2.html", "RWD", "Rows and Cols Example 2 "],
-	["RWD_rowCols_Example-3.html", "RWD", "Rows and Cols Example 3 "],
+	["RWD_flexbox_Basics.html", "RWD", "Use flexbox for Responsive Web Design."],
+	["RWD_flexbox_Example-1.html", "RWD", "Flexbox example."],
+	["RWD_fontSizing.html", "RWD", "font sizing."],
+	["RWD_pictureTag.html", "RWD", "Use &lt;picture&gt; for RWD."],
+	["RWD_rowCols_Basics.html", "RWD", "Using rows and columns."],
+	["RWD_rowCols_Example-1.html", "RWD", "Rows and Cols Example 1. "],
+	["RWD_rowCols_Example-2.html", "RWD", "Rows and Cols Example 2. "],
+	["RWD_rowCols_Example-3.html", "RWD", "Rows and Cols Example 3. "],
 ];
 
 /* set the default path to each HTML file */

@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+	<!-- --------------------------------------------------------------------
+		File	: HTML Tables 
+		Purpose	: Explain TABLE tags
+		Author	: Komal Karir
+		Date	: July 2024
+	------------------------------------------------------------------------ -->
+
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="author" content="Komal Karir" />
@@ -11,7 +18,17 @@
 		<title>Code4All</title>
 
 		<style>
-			/* turn of any styling from main CSS style file */
+			/* apply or turn-off styling from main CSS style file */
+
+			table {
+				margin-left: 50px;
+			}
+
+			td {
+				width: fit-content;
+			}
+
+			/* turn off styling from main CSS style file */
 			tr:nth-child(odd) {
 				background-color: var(--bgcolor);
 			}
@@ -35,6 +52,7 @@
 
 			<h3>The follow tags are used to define an HTML table.</h3>
 
+			<!-- table of HTML tags  -->
 			<table>
 				<thead>
 					<tr>
@@ -44,42 +62,319 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><code>&lt;table&gt;</code></td>
-						<td>start of table</td>
+						<td><code>&lt;table&gt;...&lt;/table&gt;</code></td>
+						<td>start / end of table definition</td>
 					</tr>
 					<tr>
-						<td><code>&lt;caption&gt;</code></td>
+						<td><code>&lt;caption&gt;...&lt;/caption&gt;</code></td>
 						<td>table caption</td>
 					</tr>
 					<tr>
-						<td><code>&lt;thead&gt;</code></td>
+						<td><code>&lt;thead&gt;...&lt;/thead&gt;</code></td>
 						<td>headings sections</td>
 					</tr>
 					<tr>
-						<td><code>&lt;th&gt;</code></td>
+						<td><code>&lt;th&gt;...&lt;/th&gt;</code></td>
 						<td>table column heading</td>
 					</tr>
 					<tr>
-						<td><code>&lt;tbody&gt;</code></td>
+						<td><code>&lt;tbody&gt;...&lt;/tbody&gt;</code></td>
 						<td>table body section</td>
 					</tr>
+
 					<tr>
-						<td><code>&lt;tfoot&gt;</code></td>
-						<td>footer section</td>
-					</tr>
-					<tr>
-						<td><code>&lt;tr&gt;</code></td>
+						<td><code>&lt;tr&gt;...&lt;/tr&gt;</code></td>
 						<td>table row</td>
 					</tr>
 					<tr>
-						<td><code>&lt;td&gt;</code></td>
+						<td><code>&lt;td&gt;...&lt;/td&gt;</code></td>
 						<td>table data</td>
+					</tr>
+					<tr>
+						<td><code>&lt;tfoot&gt;...&lt;/tfoot&gt;</code></td>
+						<td>footer section</td>
 					</tr>
 				</tbody>
 			</table>
 
 			<br /><br />
 
+			<h3>How to structure the HTML table tags</h3>
+			<p>
+				An HTML table consists a <em>head</em>, a <em>body</em> and a
+				<em>footer</em> section.
+			</p>
+
+			<p>
+				Each section can contain one or more table rows
+				(<code>&lt;tr&gt;</code>), and each row can contain one or more table
+				data (<code>&lt;td&gt;</code>) items.
+			</p>
+			<p>The figure below shows the structure of table, rows, and data tags.</p>
+
+			<!-- the table below shows the structure of table, rows, and data tags -->
+			<table>
+				<tbody>
+					<tr>
+						<td><code>&lt;table&gt;</code> &larr;defines start of table</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td>
+							<code>&lt;caption&gt;</code><em>caption</em
+							><code>&lt;/caption&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><code>&lt;thead&gt;</code>&larr;start of headings</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;tr&gt;</code>&larr; start of headings row</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;th&gt;</code><em>col heading 1</em
+							><code>&lt;th&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;th&gt;</code><em>col heading 2</em
+							><code>&lt;/th&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;th&gt;</code><em>col heading 3</em
+							><code>&lt;/th&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;/tr&gt;</code>&larr; end of headings row</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><code>&lt;/thead&gt;</code>&larr;end of headings sections</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><code>&lt;tbody&gt;</code>&larr;start of table body</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;tr&gt;</code>&larr; start of 1st data row</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;/tr&gt;</code></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;tr&gt;</code>&larr; start of 2nd data row</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;/tr&gt;</code></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;tr&gt;</code>&larr; start of 3rd data row</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em> table data</em
+							><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;/tr&gt;</code></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><code>&lt;/tbody&gt;</code>&larr;end of table body</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><code>&lt;tfoot&gt;</code>&larr;start of table footer</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;tr&gt;</code>&larr; start of footer row</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em>footer 1</em><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em>footer 2</em><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<code>&lt;td&gt;</code><em>footer 3</em><code>&lt;/td&gt;</code>
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><code>&lt;/tr&gt;</code></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><code>&lt;/tfoot&gt;</code>&larr;end of table footer</td>
+					</tr>
+
+					<tr>
+						<td><code>&lt;/table&gt;</code>&larr;end of table</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br /><br />
+
+			<!-- Worked table examples -->
+			<h3>Table Examples</h3>
+			<p>
+				There are attributes that can be set when defining tables, for example
+				'rowspan' and 'colspan' can be used to span across multiple cells.
+			</p>
+
+			<p>
+				When there are complex data sets to put into a table it is often best to
+				use something like JavaScript to build the table, and then have it
+				displayed on the web page.
+			</p>
+
+			<p>
+				The code below is a nice way to style every other row, to make the table
+				easier to read.
+			</p>
+
+			<p>
+				<code>tr:nth-child(odd) { background-color: lightgreen;}</code> or
+				<code>tr:nth-child(even) { background-color: lightgreen;}</code>
+			</p>
+
+			<!-- Worked table examples -->
 			<table border="1">
 				<caption>
 					Table Caption
@@ -118,6 +413,7 @@
 			</table>
 			<br /><br />
 
+			<!-- Worked table examples -->
 			<table border="2">
 				<caption>
 					Table with row headings
@@ -155,6 +451,7 @@
 
 			<br /><br />
 
+			<!-- Worked table examples -->
 			<table border="3">
 				<caption>
 					Table Spanning Multiple Columns
@@ -193,6 +490,7 @@
 
 			<br /><br />
 
+			<!-- Worked table examples -->
 			<table border="4">
 				<caption>
 					Table Spanning Multiple Rows
@@ -236,6 +534,10 @@
 		</main>
 
 		<!-- insert standard footer -->
-		<embed type="text/html" src="assets/resources/footer.html" width="100%" />
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
 	</body>
 </html>
