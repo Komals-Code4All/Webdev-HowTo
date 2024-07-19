@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>Example using CSS <strong>{display:}</strong> keyword.</h2>
+			<p>
+				The CSS <code>{display:}</code> property is used to hide or display an
+				element on a page.
+			</p>
+			<p>
+				Note that the element, for example the image, does NOT take up any space
+				on the page when hidden.
+			</p>
+
+			<p>In CSS use <code>{display:none} to hide the element.</code></p>
+			<!-- here's the image -->
+
+			<img id="piccy" src="assets/images/miniMe.jpg" height="25%" width="25%" />
+
+			<br />
+
+			<!-- Define button actions using embedded code -->
+			<button
+				onclick="document.getElementById('piccy').style.display = 'inline'"
+			>
+				SHOW
+			</button>
+
+			<!-- Define button actions using embedded code -->
+			<button onclick="document.getElementById('piccy').style.display = 'none'">
+				HIDE
+			</button>
+
+			<!-- insert standard footer -->
+			<embed
+				type="text/html"
+				src="assets/embedCode/stdFooter.html"
+				width="100%"
+			/>
+		</main>
+	</body>
+</html>

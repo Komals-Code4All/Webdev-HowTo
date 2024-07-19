@@ -17,6 +17,8 @@ codeList = [
 	["button_popupAlert.html", "Buttons", "Have an alert message pop-up"],
 	["button_popupInput.html", "Buttons", "Have an input message pop-up"],
 
+	["CSS_displayNone.html", "CSS", "Hide elements using DISPLAY."],
+	["CSS_visibilityNone.html", "CSS", "Hide elements using VISIBILITY."],
 	["CSS_inlineBlock.html", "CSS", "Make block elements appear in-line"],
 	["CSS_roundedCorners.html", "CSS", "Give elements a rounded corner"],
 

@@ -57,9 +57,15 @@ thead {
 }
 
 tr:nth-child(even) {
-	background-color: var(--bgColorLight);
+	background-color: var(--bgColorPale);
 }
 
+button {
+	color: var(--txtColor);
+	background-color: var(--bgColor);
+	font-weight: bold;
+	border-radius: 5px;
+}
 button:hover {
 	color: var(--bgColor); /* reverse the fore ground and background colors */
 	background-color: var(--txtColor);

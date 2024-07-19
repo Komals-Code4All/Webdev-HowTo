@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<style>
+			/* turn of any styling from main CSS style file */
+			tr:nth-child(odd) {
+				background-color: var(--bgcolor);
+			}
+
+			tr:nth-child(even) {
+				background-color: var(--bgcolor);
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>HTML Table Basics</h2>
+
+			<h3>The follow tags are used to define an HTML table.</h3>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Purpose</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>&lt;table&gt;</code></td>
+						<td>start of table</td>
+					</tr>
+					<tr>
+						<td><code>&lt;caption&gt;</code></td>
+						<td>table caption</td>
+					</tr>
+					<tr>
+						<td><code>&lt;thead&gt;</code></td>
+						<td>headings sections</td>
+					</tr>
+					<tr>
+						<td><code>&lt;th&gt;</code></td>
+						<td>table column heading</td>
+					</tr>
+					<tr>
+						<td><code>&lt;tbody&gt;</code></td>
+						<td>table body section</td>
+					</tr>
+					<tr>
+						<td><code>&lt;tfoot&gt;</code></td>
+						<td>footer section</td>
+					</tr>
+					<tr>
+						<td><code>&lt;tr&gt;</code></td>
+						<td>table row</td>
+					</tr>
+					<tr>
+						<td><code>&lt;td&gt;</code></td>
+						<td>table data</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br /><br />
+
+			<table border="1">
+				<caption>
+					Table Caption
+				</caption>
+				<head>
+					<tr>
+						<th>Col Heading 1</th>
+						<th>Col Heading 2</th>
+						<th>Col Heading 3</th>
+					</tr>
+				</head>
+				<tbody>
+					<tr>
+						<td>Row 1, Cell 1</td>
+						<td>Row 1, Cell 2</td>
+						<td>Row 1, Cell 3</td>
+					</tr>
+					<tr>
+						<td>Row 2, Cell 1</td>
+						<td>Row 2, Cell 2</td>
+						<td>Row 2, Cell 3</td>
+					</tr>
+					<tr>
+						<td>Row 3, Cell 1</td>
+						<td>Row 3, Cell 2</td>
+						<td>Row 3, Cell 3</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>Footer, Cell 1</td>
+						<td>Footer, Cell 2</td>
+						<td>Footer, Cell 3</td>
+					</tr>
+				</tfoot>
+			</table>
+			<br /><br />
+
+			<table border="2">
+				<caption>
+					Table with row headings
+				</caption>
+				<head> </head>
+				<tbody>
+					<tr>
+						<th>Row Heading 1</th>
+						<td>Row 1, Cell 1</td>
+						<td>Row 1, Cell 2</td>
+						<td>Row 1, Cell 3</td>
+					</tr>
+					<tr>
+						<th>Row Heading 2</th>
+						<td>Row 2, Cell 1</td>
+						<td>Row 2, Cell 2</td>
+						<td>Row 2, Cell 3</td>
+					</tr>
+					<tr>
+						<th>Row Heading 3</th>
+						<td>Row 3, Cell 1</td>
+						<td>Row 3, Cell 2</td>
+						<td>Row 3, Cell 3</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Footer Heading</th>
+						<td>Footer, Cell 1</td>
+						<td>Footer, Cell 2</td>
+						<td>Footer, Cell 3</td>
+					</tr>
+				</tfoot>
+			</table>
+
+			<br /><br />
+
+			<table border="3">
+				<caption>
+					Table Spanning Multiple Columns
+				</caption>
+				<head>
+					<tr>
+						<th colspan="4">Main Heading</th>
+					</tr>
+				</head>
+				<tbody>
+					<tr>
+						<th>Row Heading 1</th>
+						<td>Row 1, Cell 1</td>
+						<td>Row 1, Cell 2</td>
+						<td>Row 1, Cell 3</td>
+					</tr>
+					<tr>
+						<th>Row Heading 2</th>
+						<td>Row 2, Cell 1</td>
+						<td>Row 2, Cell 2</td>
+						<td>Row 2, Cell 3</td>
+					</tr>
+					<tr>
+						<th>Row Heading 3</th>
+						<td>Row 3, Cell 1</td>
+						<td>Row 3, Cell 2</td>
+						<td>Row 3, Cell 3</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="4">Footer Heading</th>
+					</tr>
+				</tfoot>
+			</table>
+
+			<br /><br />
+
+			<table border="4">
+				<caption>
+					Table Spanning Multiple Rows
+				</caption>
+				<head>
+					<tr>
+						<th></th>
+						<th>Col Heading 1</th>
+						<th>Col Heading 2</th>
+						<th>Col Heading 3</th>
+					</tr>
+				</head>
+				<tbody>
+					<tr>
+						<th>Row Heading 1</th>
+						<td>Row 1, Cell 1</td>
+						<td>Row 1, Cell 2</td>
+						<td>Row 1, Cell 3</td>
+					</tr>
+					<tr>
+						<th rowspan="2">Row Heading 2</th>
+						<td>Row 2, Cell 1</td>
+						<td>Row 2, Cell 2</td>
+						<td>Row 2, Cell 3</td>
+					</tr>
+					<tr>
+						<td>Row 3, Cell 1</td>
+						<td>Row 3, Cell 2</td>
+						<td>Row 3, Cell 3</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Footer Heading</th>
+						<td>Footer, Cell 1</td>
+						<td>Footer, Cell 2</td>
+						<td>Footer, Cell 3</td>
+					</tr>
+				</tfoot>
+			</table>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed type="text/html" src="assets/resources/footer.html" width="100%" />
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>Example using CSS <strong>{visibility:}</strong> keyword.</h2>
+
+			<p>
+				The CSS <code>{visibility: <em>value</em>}</code> property is used to
+				hide or display an element on a page.
+			</p>
+
+			<p>
+				Unlike <code>{display:none}</code>, using
+				<code>{visibility: hidden}</code> removes the element from the page.
+				However, it still takes up space even when hidden. To show the element,
+				use <code>{visibility:visible}</code>.
+			</p>
+
+			<br />
+			<!-- here's the image -->
+			<img id="piccy" src="assets/images/miniMe.jpg" height="25%" width="25%" />
+			<br />
+			<button
+				onclick="document.getElementById('piccy').style.visibility = 'hidden'"
+			>
+				HIDE
+			</button>
+			<button
+				onclick="document.getElementById('piccy').style.visibility =
+      'visible'"
+			>
+				SHOW
+			</button>
+
+			<!-- insert standard footer -->
+			<embed
+				type="text/html"
+				src="assets/embedCode/stdFooter.html"
+				width="100%"
+			/>
+		</main>
+	</body>
+</html>
