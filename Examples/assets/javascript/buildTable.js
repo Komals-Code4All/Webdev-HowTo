@@ -12,27 +12,20 @@
 codeList = [
 	["bg_gradientFill.html", "Backgrounds", "Use a gradient-fill colour."],
 	["bg_imageFixed.html", "Backgrounds", "Set a fixed background image."],
-	[
-		"bg_patterns.html",
-		"Backgrounds",
-		"Use CSS pattern to fill the background.",
-	],
+	["bg_patterns.html", "Backgrounds", "Use CSS patterns for a background."],
 
 	["button_popupAlert.html", "HTML", "Buttons - have an alert message pop-up."],
 	["button_popupAlert.html", "HTML", "Buttons - have an alert message pop-up."],
 
+	["HTML_summary.html", "HTML", "Implementing READ MORE... in HTML."],
+	["favicon.html", "HTML", "Display a fav-icon in the page's tab."],
 	["HTML_tables.html", "HTML", "Tables - Understanding table elements."],
-
 	["CSS_displayNone.html", "CSS", "Hide elements using DISPLAY."],
 	["CSS_visibilityNone.html", "CSS", "Hide elements using VISIBILITY."],
 	["CSS_inlineBlock.html", "CSS", "Make block elements appear in-line."],
 	["CSS_roundedCorners.html", "CSS", "Give elements a rounded corner."],
 
-	[
-		"autoTitle.html",
-		"Embed",
-		"Extract &lt;title&gt; tag for &lt;h1&gt;header.",
-	],
+	["autoTitle.html", "Embed", "Extract &lt;title&gt; content for a heading."],
 	["embedAudio.html", "Embed", "Insert playable audio on your page."],
 	["embedVideo.html", "Embed", "Insert playable video on your page."],
 
