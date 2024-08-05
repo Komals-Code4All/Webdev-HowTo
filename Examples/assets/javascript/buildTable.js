@@ -35,6 +35,9 @@ codeList = [
 	["fonts_sizing_EM.html", "Fonts", "Change font sizes relatively using EM."],
 	["fonts_sizing_Literals.html", "Fonts", "Change font sizes using literals."],
 	["fonts_sizing_REM.html", "Fonts", "Change font sizes using Root-EM."],
+	["fonts_socialMediaIcons.html", "Fonts", "Using FontAwesome for Icons."],
+
+	["forms_groupedFields.html", "Forms", "Grouping inputs with Field Sets."],
 
 	["heroImage.html", "Images", "Insert a Hero image with overlay text."],
 

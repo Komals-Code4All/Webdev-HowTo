@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+
+		<style>
+			fieldset {
+				margin-top: 15px;
+				background-color: beige;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h2>Grouped Fields in a Form</h2>
+			<p>
+				Grouped items are achieved using the &lt;fieldset&gt; tag. A background
+				color helps readability.
+			</p>
+			<form>
+				<!-- user details section -->
+				<fieldset>
+					<legend>User Details</legend>
+					<label for="fname">First Name:</label>
+					<input id="fname" type="text" name="fname" />
+
+					<label for="lname">Last Name:</label>
+					<input id="lname" type="text" name="lname" />
+				</fieldset>
+
+				<!-- Email section -->
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label for="email">Email Address:</label>
+					<input
+						id="email"
+						type="email"
+						name="email"
+						placeholder="Email address"
+					/>
+				</fieldset>
+
+				<fieldset>
+					<legend>Drinks and Snacks</legend>
+					<!-- coffee selection field-->
+					<label for="fav-coffee">What is your favourite coffee?</label>
+					<input
+						id="fav-coffee"
+						list="coffees"
+						name="fav-coffee"
+						placeholder="Please select"
+					/>
+					<datalist id="coffees">
+						<option value="Latte"></option>
+						<option value="Americano"></option>
+						<option value="Cappuccino"></option>
+						<option value="Espresso"></option>
+						<option value="Flat-white"></option>
+					</datalist>
+
+					<!-- snack selection fields-->
+					<input type="checkbox" id="croissants-checkbox" name="croissants" />
+					<label for="croissants-checkbox">Croissants</label>
+
+					<!-- snack selection fields-->
+					<input type="checkbox" id="scones-checkbox" name="scones" />
+					<label for="scones-checkbox">Scones</label>
+
+					<!-- feedback field-->
+					<br />
+					<label for="feedback">How can we improve your experience?</label>
+					<textarea
+						id="feedback"
+						rows="4"
+						cols="87"
+						name="feedback"
+						placeholder="Please let us have your feedback"
+					></textarea>
+				</fieldset>
+
+				<!-- form buttons -->
+				<br />
+				<input type="reset" value="Reset" />
+				<input type="submit" value="Submit" />
+			</form>
+		</main>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+	<!-- Sample code for you to use to put Bootstrap v53 and FontAwesome v6 links in your code -->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Komal Karir" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="web development code" />
+		<meta name="keywords" content="HTML, HTML5,CSS, CSS3, JavaScript" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" type="image/x-icon" href="assets/images/letterK.ico" />
+		<title>Code4All</title>
+		<!-- Link to Bootstrap v5.3 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Link to FontAwesome v6 -->
+		<!-- You can register on FontAwesome using your own email to get your own ID code and link -->
+		<script
+			src="https://kit.fontawesome.com/2e18e491dd.js"
+			crossorigin="anonymous"
+		></script>
+
+		<style>
+			.row-table {
+				display: table;
+			}
+
+			.list-inline-item:not(:last-child) {
+				margin: 0;
+			}
+
+			/* Change the values below to change the size and shape of your social media icons */
+			.social-links li a i {
+				width: 40px;
+				height: 40px;
+				padding: 11px;
+				border-radius: 50%;
+				font-size: 15px;
+				line-height: 7px;
+				text-align: center;
+				vertical-align: baseline;
+				color: #fafafa;
+				background-color: #8f8f8f;
+				transition: all 0.35s ease-in-out;
+				-moz-transition: all 0.35s ease-in-out;
+				-webkit-transition: all 0.35s ease-in-out;
+			}
+
+			/* this changes the icons background color when the mouse hovers over them */
+			.social-links li a i:hover {
+				background-color: blue;
+			}
+
+			#footer-details {
+				padding: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- insert standard header -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdHeader.html"
+			width="100%"
+		/>
+
+		<main>
+			<h5 class="uppercase general-sub">
+				Using FontAwesome for Social Media Icons
+			</h5>
+		</main>
+
+		<!-- Footer area, for social media icons ----------------------------------->
+		<footer class="container-fluid">
+			<!-- the icons are done as a unordered list here, but feel free to amend as you wish -->
+			<!-- NB: clicking the social media icon links won't go anywhere, due to 'target = blank' -->
+			<ul class="list-inline social-links">
+				<li class="list-inline-item">
+					<a target="_blank" href="#">
+						<i class="fa-brands fa-facebook" aria-hidden="true">
+							<span class="sr-only">Facebook</span>
+						</i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a target="_blank" href="#">
+						<i class="fa-brands fa-twitter" aria-hidden="true">
+							<span class="sr-only">Twitter</span>
+						</i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a target="_blank" href="#">
+						<i class="fa-brands fa-linkedin" aria-hidden="true">
+							<span class="sr-only">LinkedIn</span>
+						</i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a target="_blank" href="#">
+						<i class="fa-brands fa-instagram" aria-hidden="true">
+							<span class="sr-only">Instagram</span>
+						</i>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a target="_blank" href="#">
+						<i class="fa-brands fa-youtube" aria-hidden="true">
+							<span class="sr-only">YouTube</span>
+						</i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<!-- insert standard footer -->
+		<embed
+			type="text/html"
+			src="assets/embedCode/stdFooter.html"
+			width="100%"
+		/>
+	</body>
+</html>
